@@ -1,4 +1,5 @@
 @use "mixins";
 
-// @include mixins.font("Gilroy", normal, 300, "/fonts/gilroy-light.woff2");
-// @include mixins.font("Gilroy", normal, 800, "/fonts/gilroy-extrabold.woff2");
+@include mixins.font("Montserrat", normal, 400, "/fonts/Montserrat-Regular.woff2");
+@include mixins.font("Montserrat", normal, 600, "/fonts/Montserrat-SemiBold.woff2");
+@include mixins.font("Montserrat", normal, 700, "/fonts/Montserrat-Bold.woff2");
