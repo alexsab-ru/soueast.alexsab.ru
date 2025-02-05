@@ -1,19 +1,19 @@
 import { phoneFormat } from '@/js/utils/numbers.format';
 import { LAST_DAY, MONTH, YEAR } from '@/js/utils/date';
 // Название сайта по умолчанию
-export const SITE_NAME = 'Название сайта';
+export const SITE_NAME = 'Альфа';
 // Юр лицо
-export const LEGAL_ENTITY = 'ООО «Юридическое название»';
+export const LEGAL_ENTITY = 'ООО «Альфа»';
 // ИНН
-export const LEGAL_INN = '1234567890';
+export const LEGAL_INN = '7325117822';
 // Город
-export const LEGAL_CITY = 'г. Город';
+export const LEGAL_CITY = 'г. Самара';
 // где? в Городе
-export const LEGAL_CITY_WHERE = 'Городе';
+export const LEGAL_CITY_WHERE = 'Самаре';
 // Описание сайта по умолчанию
-export const SITE_DESCR = 'Официальный дилерский центр';
+export const SITE_DESCR = 'Официальный дилерский центр Soueast в Самаре';
 // Телефон по умолчанию
-export const PHONE = '+7 (999) 000-00-00';
+export const PHONE = '+7 (846) 9 777-779';
 // Бренд
 export const BRAND = 'SOUEAST';
 // Конечное время для таймера
