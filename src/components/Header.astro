@@ -21,7 +21,7 @@ import socials from '@/data/socials.json';
 ---
 <div
 	x-data="header"
-	class="bg-white sticky top-0 transition-all duration-300 z-50"
+	class="bg-black text-white sticky top-0 transition-all duration-300 z-50"
 	:class="{'shadow-3xl': scrolling}"
 >
 	<header>
@@ -36,7 +36,7 @@ import socials from '@/data/socials.json';
 					{
 						salons.length && salons.map((salon: any, index) => {
 							return index < 2 && (
-						<a href={`tel:${phoneFormat(salon.phone)}`} class="whitespace-nowrap font-extrabold text-black/80 text-base xl:text-lg flex items-center gap-1 flex-nowrap transition-colors hover:text-accent-500" title={salon.name}><Icon name="mdi:cellphone" class="text-xl" /> {salon.phone}</a>
+						<a href={`tel:${phoneFormat(salon.phone)}`} class="whitespace-nowrap font-extrabold text-white text-base xl:text-lg flex items-center gap-1 flex-nowrap transition-colors hover:text-accent-500" title={salon.name}><Icon name="mdi:cellphone" class="text-xl" /> {salon.phone}</a>
 							)
 						})
 					}
@@ -96,7 +96,7 @@ import socials from '@/data/socials.json';
 
 
 {links && (
-	<div id="site_nav" class={'hidden lg:block border-t'+classBottom}>
+	<div id="site_nav" class={'hidden lg:block border-t border-t-white/30'+classBottom}>
 		<div class="container">
 			<div class="flex overflow-x-auto">
 			{
@@ -127,7 +127,7 @@ import socials from '@/data/socials.json';
 
 	<div
 		x-cloak
-		class="fixed top-0 bottom-0 right-0 z-40 bg-white py-10 shadow-2xl transition-transform duration-500 max-w-[500px] w-full"
+		class="fixed top-0 bottom-0 right-0 z-40 bg-black text-white py-10 shadow-2xl transition-transform duration-500 max-w-[500px] w-full"
 		:class="open ? 'translate-x-0' : 'translate-x-[110%]'"
 	>
 		<button class="w-10 h-10 absolute right-0 top-0 text-2xl font-mono transition-opacity opacity-60 hover:opacity-100" @click.prevent="open = false">&times;</button>
@@ -135,7 +135,7 @@ import socials from '@/data/socials.json';
 		<div class="h-full">
 			<div class="h-full overflow-y-auto">
 				{links.length &&
-				<div class="flex flex-col border-b lg:hidden">
+				<div class="flex flex-col border-b border-b-white/30 lg:hidden">
 					{links.map(link => (
 					<a
 						href={path === '/' ? link.url : '/'+link.url}
@@ -155,7 +155,7 @@ import socials from '@/data/socials.json';
 					<div class="flex flex-col gap-3 py-5 px-5 border-t first:border-0">
 						<div class="font-medium text-lg">{salon.name}</div>
 						<a href="#contacts" class="text-xl flex items-center gap-1 flex-nowrap"><Icon name="mdi:map-marker-outline" class="text-2xl flex-shrink-0" /><Fragment set:html={salon.address} /></a>
-						<a href={`tel:${phoneFormat(salon.phone)}`} class="text-2xl font-extrabold text-black/80 flex items-center gap-1 flex-nowrap transition-colors hover:text-accent-500" title={salon.name}><Icon name="mdi:cellphone" class="text-xl" /> {salon.phone}</a>
+						<a href={`tel:${phoneFormat(salon.phone)}`} class="text-2xl font-extrabold text-white flex items-center gap-1 flex-nowrap transition-colors hover:text-accent-500" title={salon.name}><Icon name="mdi:cellphone" class="text-xl" /> {salon.phone}</a>
 					</div>
 				))}
 				</div>
