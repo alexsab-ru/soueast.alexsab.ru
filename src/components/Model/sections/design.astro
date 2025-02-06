@@ -10,7 +10,7 @@ interface Props {
 }
 const { section } = Astro.props;
 ---
-<section class="py-20 font-light model-section bg-gray-100" id={ section?.id }>
+<section class="py-20 font-normal model-section bg-gray-100" id={ section?.id }>
 	<div class="container">
 		{section?.name && (<p class="text-accent-400 text-sm"><Fragment set:html={section?.name} /></p>)}
 		{section?.title && (<h2 class="text-3xl sm:text-5xl font-normal"><Fragment set:html={section?.title} /></h2>)}
