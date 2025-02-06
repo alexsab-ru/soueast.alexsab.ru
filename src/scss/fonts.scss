@@ -1,5 +1,6 @@
 @use "mixins";
 
 @include mixins.font("Montserrat", normal, 400, "/fonts/Montserrat-Regular.woff2");
+@include mixins.font("Montserrat", normal, 400, "/fonts/Montserrat-Medium.woff2");
 @include mixins.font("Montserrat", normal, 600, "/fonts/Montserrat-SemiBold.woff2");
 @include mixins.font("Montserrat", normal, 700, "/fonts/Montserrat-Bold.woff2");
