@@ -3,7 +3,7 @@ import { LAST_DAY, MONTH, YEAR } from '@/js/utils/date';
 // Название сайта по умолчанию
 export const SITE_NAME = 'Альфа';
 // Юр лицо
-export const LEGAL_ENTITY = 'ООО «Альфа»';
+export const LEGAL_ENTITY = 'ООО «Эксперт Самара»';
 // ИНН
 export const LEGAL_INN = '7325117822';
 // Город
