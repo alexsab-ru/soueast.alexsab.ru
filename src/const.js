@@ -13,7 +13,7 @@ export const LEGAL_CITY_WHERE = 'Самаре';
 // Описание сайта по умолчанию
 export const SITE_DESCR = 'Официальный дилерский центр Soueast в Самаре';
 // Телефон по умолчанию
-export const PHONE = '+7 (846) 9 777-779';
+export const PHONE = '+7 (846) 977-77-17';
 // Бренд
 export const BRAND = 'SOUEAST';
 // Конечное время для таймера
