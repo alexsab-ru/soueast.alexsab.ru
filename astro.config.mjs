@@ -40,6 +40,6 @@ export default defineConfig({
 			},
 		},
 	},
-	site: 'https://soueast.alexsab.ru',
+	site: 'https://soueast.dev.alexsab.ru',
 	base: "/"
 });
